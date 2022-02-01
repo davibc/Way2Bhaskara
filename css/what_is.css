@@ -1,0 +1,156 @@
+:root {
+  --background-color: hsl(0, 0%, 3%);
+  --text-gradient: linear-gradient(90deg, rgba(253, 207, 243, 2),rgba(222, 137, 190, 1));
+  --btn-color: #C297B8;
+}
+
+/* Desktop */
+@media screen and (min-width: 641px) {
+  body {
+    background-color: var(--background-color);
+    color: white;
+    font-family: 'Inter', sans-serif;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    background: var(--text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 24px;
+  }
+  
+  .text {
+    width: 29.438rem;
+    text-align: justify;
+  }
+  
+  button {
+    border: none;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    width: 226.12px;
+    height: 79px;
+  
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+  
+    margin: 0 0.3rem;
+  }
+  
+  /* Button animation */
+  button {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+  
+  button {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  button:hover, button:focus, button:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 640px) {
+  body {
+    background-color: var(--background-color);
+    color: white;
+    font-family: 'Inter', sans-serif;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    background: var(--text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    width: 16.25rem;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .text {
+    width: 16.25rem;
+    text-align: justify;
+  }
+  
+  button {
+    border: none;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    width: 126.74px;
+    height: 37.39px;
+  
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  
+    margin: 0 0.3rem;
+  }
+  
+  /* Button animation */
+  button {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+  
+  button {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  button:hover, button:focus, button:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}

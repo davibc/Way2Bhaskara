@@ -1,0 +1,124 @@
+:root {
+  --background-color: hsl(0, 0%, 3%);
+  --text-gradient: linear-gradient(90deg, rgba(253, 207, 243, 2),rgba(222, 137, 190, 1));
+  --btn-color: #C297B8;
+}
+/* Desktop */
+@media screen and (min-width: 641px){
+  body {
+    background-color: var(--background-color);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+
+    background: var(--text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 1.2rem;
+  }
+
+  .btn {
+    cursor: pointer;
+    border: none;
+    background-color: var(--btn-color);
+    width: 253px;
+    height: 79px;
+
+    display: inline-block;
+    margin: 0 0.23rem;
+
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+  }
+
+  #btn1, #btn2 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+
+  #btn1:hover, #btn2:hover, #btn1:focus, #btn2:focus, #btn1:active, #btn2:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 640px) {
+  body {
+    background-color: var(--background-color);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+
+    background: var(--text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 1.2rem;
+  }
+
+  .btn {
+    cursor: pointer;
+    border: none;
+    background-color: var(--btn-color);
+    width: 126px;
+    height: 37px;
+
+    display: inline-block;
+    margin: 0 0.23rem;
+
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+  }
+
+  #btn1, #btn2 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+
+  #btn1:hover, #btn2:hover, #btn1:focus, #btn2:focus, #btn1:active, #btn2:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
