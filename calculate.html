@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W2B - Calculate</title>
+  <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/calculate.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+</head>
+<body>
+  <h1>Way2Bhaskara</h1>
+  <p><input id="valueA" type="text" placeholder='Type "a" value'></p>
+  <p><input id="valueB" type="text" placeholder='Type "b" value'></p>
+  <p><input id="valueC" type="text" placeholder='Type "c" value'></p>
+  <button id="calculate" onclick="bhaskara()">Calculate</button>
+
+  <div class="results">
+  <h2>Results</h2>
+  <p id="result-text" class="x1">x' = y</p>
+  <p id="result-text" class="x2">x" = z</p>
+  </div>
+
+  <a href="landing_page.html"><button id="home-btn">Home</button></a>
+
+  <script src="js/calculate.js"></script>
+</body>
+</html>
